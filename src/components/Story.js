@@ -25,7 +25,6 @@ export const Story = memo(function Story({ storyId }) {
                 navigate('/newspage');}}>Читать</button>} style={{ width: 1000 }}>
               <p>Автор: {story.by}</p>
               <p>Рейтинг: {story.score} </p>
-              <p>ID: {storyId} </p>
               <p>Опубликовано: <Moment unix format='MMM, DD, YYYY • hh:mm a'>{story.time}</Moment></p>
         </Card>
       </Space>
